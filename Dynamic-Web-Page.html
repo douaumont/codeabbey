@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Basics of HTML demo</title>
+    </head>
+    <body>
+        <p>
+			<script>
+			function GetRandomInt(min, max) 
+			{
+			  min = Math.ceil(min);
+			  max = Math.floor(max);
+			  return Math.floor(Math.random() * (max - min) + min);
+			}
+			
+			let secretVal = 1055;
+			do
+			{
+				randVal = GetRandomInt(100000, 999999);
+			} while (randVal % secretVal != 0);
+			
+			document.body.innerHTML = "Random value is " + randVal;
+			
+			</script>
+		</p>
+    </body>
+</html>
